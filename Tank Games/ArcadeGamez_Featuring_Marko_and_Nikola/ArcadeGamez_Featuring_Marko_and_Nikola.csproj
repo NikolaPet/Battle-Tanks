@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A41D0A8-3739-4D70-9A2B-6BB0CF650755}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArcadeGamez_Featuring_Marko_and_Nikola</RootNamespace>
+    <AssemblyName>ArcadeGamez_Featuring_Marko_and_Nikola</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BadGuy.cs" />
+    <Compile Include="Block.cs" />
+    <Compile Include="EndOfGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EndOfGame.Designer.cs">
+      <DependentUpon>EndOfGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Explanation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Explanation.designer.cs">
+      <DependentUpon>Explanation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodGuy.cs" />
+    <Compile Include="GrassBlock.cs" />
+    <Compile Include="HighScoreGame1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HighScoreGame1.Designer.cs">
+      <DependentUpon>HighScoreGame1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HighscoreGame2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HighscoreGame2.Designer.cs">
+      <DependentUpon>HighscoreGame2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HighScoreOverall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HighScoreOverall.Designer.cs">
+      <DependentUpon>HighScoreOverall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IceBlock.cs" />
+    <Compile Include="InstructionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstructionsForm.designer.cs">
+      <DependentUpon>InstructionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetalBlock.cs" />
+    <Compile Include="Projectile.cs" />
+    <Compile Include="SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartForm.Designer.cs">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructions.Designer.cs">
+      <DependentUpon>Instructions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ShootTheBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShootTheBox.Designer.cs">
+      <DependentUpon>ShootTheBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EndOfGame.resx">
+      <DependentUpon>EndOfGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Explanation.resx">
+      <DependentUpon>Explanation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HighScoreGame1.resx">
+      <DependentUpon>HighScoreGame1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HighscoreGame2.resx">
+      <DependentUpon>HighscoreGame2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HighScoreOverall.resx">
+      <DependentUpon>HighScoreOverall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstructionsForm.resx">
+      <DependentUpon>InstructionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartForm.resx">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructions.resx">
+      <DependentUpon>Instructions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShootTheBox.resx">
+      <DependentUpon>ShootTheBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11174220_1077312228953102_3517399206523915934_o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11196336_1077312158953109_9173675473450300043_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beach-sand-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green-Grass-Background-8-625x625.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tankfinal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grass.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grassUnscaled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iceUnscaled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\metal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\metalUnscaled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\metalz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mud.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tank.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tankLeft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tankRight.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tankRightPurple.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tankRightPurple1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tankRightPurple2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tankRightPurple3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tankTop.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tankBottom.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
